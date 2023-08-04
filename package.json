@@ -14,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/igordosreis/codebase-fullstack/issues"
   },
-  "homepage": "https://github.com/igordosreis/codebase-fullstack#readme"
+  "homepage": "https://github.com/igordosreis/codebase-fullstack#readme",
+  "volta": {
+    "node": "16.15.1",
+    "npm": "8.11.0"
+  }
 }
