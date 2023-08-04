@@ -18,5 +18,9 @@
   "volta": {
     "node": "16.15.1",
     "npm": "8.11.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-angular": "^17.6.7"
   }
 }
