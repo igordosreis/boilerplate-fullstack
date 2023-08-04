@@ -1,10 +1,19 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-if git diff-index --cached --quiet HEAD -- "./frontend/"; then
-  (cd "./frontend/" && npx lint-staged)
+if git diff-index --cached --quiet HEAD -- front-end; then
+  (cd front-end && npx lint-staged)
 fi
 
-if git diff-index --cached --quiet HEAD -- "./backend/"; then
-  (cd "./backend/" && npx lint-staged)
+if git diff-index --cached --quiet HEAD -- back-end; then
+  (cd back-end && npx lint-staged)
 fi
+
+
+# if git diff-index --cached --quiet HEAD -- ./front-end/; then
+#   (cd ./front-end/ && npx lint-staged)
+# fi
+
+# if git diff-index --cached --quiet HEAD -- ./back-end/; then
+#   (cd ./back-end/ && npx lint-staged)
+# fi
