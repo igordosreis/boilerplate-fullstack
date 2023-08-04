@@ -1,4 +1,12 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm test
+if git diff --cached --name-only --exit-code frontend; then
+  cd frontend && npx lint-staged
+  cd ..
+fi
+
+if git diff --cached --name-only --exit-code backend; then
+  cd backend && npx lint-staged
+  cd ..
+fi
