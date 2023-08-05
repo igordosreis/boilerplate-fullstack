@@ -1,2 +1,3 @@
-# codebase-fullstack
-Codebase for fullstack projects.
+# boilerplate-fullstack
+
+Boilerplate for fullstack projects.

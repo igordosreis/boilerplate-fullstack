@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "version": "0.1.0",
-  "description": "Front-end codebase",
+  "description": "Front-end boilerplate",
   "author": "Igor dos Reis",
   "private": true,
   "scripts": {

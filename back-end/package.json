@@ -1,7 +1,7 @@
 {
   "name": "back-end",
   "version": "1.0.0",
-  "description": "Back-end codebase",
+  "description": "Back-end boilerplate",
   "author": "Igor dos Reis",
   "main": "./src/api/server.js",
   "scripts": {

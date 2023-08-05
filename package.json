@@ -1,7 +1,7 @@
 {
-  "name": "codebase-fullstack",
+  "name": "boilerplate-fullstack",
   "version": "1.0.0",
-  "description": "Codebase for fullstack projects.",
+  "description": "Boilerplate for fullstack projects.",
   "author": "Igor dos Reis",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igordosreis/codebase-fullstack.git"
+    "url": "git+https://github.com/igordosreis/boilerplate-fullstack.git"
   },
   "bugs": {
-    "url": "https://github.com/igordosreis/codebase-fullstack/issues"
+    "url": "https://github.com/igordosreis/boilerplate-fullstack/issues"
   },
-  "homepage": "https://github.com/igordosreis/codebase-fullstack#readme",
+  "homepage": "https://github.com/igordosreis/boilerplate-fullstack#readme",
   "volta": {
     "node": "16.15.1",
     "npm": "8.11.0"
