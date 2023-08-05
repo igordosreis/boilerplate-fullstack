@@ -1,9 +1,9 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "semi": ["error", "never"],
+    "semi": ["error", "always"],
     "quotes": ["error", "single", { "avoidEscape": true }],
-    "arrow-parens": ["error", "as-needed"],
+    "arrow-parens": ["error", "always"],
     "max-len": [
       "error",
       {

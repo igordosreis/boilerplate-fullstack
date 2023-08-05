@@ -20,6 +20,7 @@
   },
   "plugins": ["@typescript-eslint", "sonarjs", "mocha"],
   "rules": {
+    "semi": ["error", "always"],
     "no-underscore-dangle": "off",
     "no-console": "warn",
     "camelcase": "warn",
