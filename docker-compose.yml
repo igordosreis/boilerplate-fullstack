@@ -23,7 +23,6 @@ services:
       - 3071:3071
     platform: linux/x86_64
     working_dir: /back-end
-    command: npm run dev
     volumes:
       - ./back-end:/back-end
     depends_on:
