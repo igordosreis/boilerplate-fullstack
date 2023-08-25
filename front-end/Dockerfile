@@ -1,6 +1,6 @@
 FROM node:16.14-alpine
 
-WORKDIR /front-end
+WORKDIR /app-front-end
 
 EXPOSE 3070
 

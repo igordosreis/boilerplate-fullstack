@@ -6,9 +6,9 @@ services:
     ports:
       - 3070:3000
     platform: linux/x86_64
-    working_dir: /front-end
+    working_dir: /app-front-end
     volumes:
-      - ./front-end:/front-end
+      - ./front-end:/app-front-end
     depends_on:
       backend:
         condition: service_healthy
@@ -22,9 +22,9 @@ services:
     ports:
       - 3071:3071
     platform: linux/x86_64
-    working_dir: /back-end
+    working_dir: /app-back-end
     volumes:
-      - ./back-end:/back-end
+      - ./back-end:/app-back-end
     depends_on:
       db:
         condition: service_healthy
@@ -40,7 +40,7 @@ services:
       retries: 5
   db:
     image: mysql:8.0.21
-    container_name: db
+    container_name: app-db
     platform: linux/x86_64
     ports:
       - 3072:3306
