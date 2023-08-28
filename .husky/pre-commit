@@ -2,9 +2,9 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 if git diff-index --cached HEAD -- "front-end"; then
-  (cd front-end && npx lint-staged)
+  (cd "front-end" && npx lint-staged)
 fi
 
 if git diff-index --cached HEAD -- "back-end"; then
-  (cd back-end && npx lint-staged)
+  (cd "back-end" && npx lint-staged)
 fi
