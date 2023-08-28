@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "npm install && docker compose up --build -d",
+    "setup:local": "npm install && cd front-end && npm install && cd .. && cd back-end && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },

@@ -1,16 +1,19 @@
 ###### English
 
-# Fullstack Boilerplate for Typescript, Next.js 13, Sass, Node.js, Express and MySQL
+# Fullstack Boilerplate for MERN with Typescript
 
-A simple boilerplate designed to get fullstack projects with Typescript up and running quickly using Next.js and Sass for the front-end and Node.js, Express and MySQL for the back-end, while providing a consistent developer experience, with tools like Volta, Husky, Lint-staged and ESLint.
+A simple boilerplate designed to get fullstack projects up and running quickly using MERN (MySQL, Express, React and Node.js) with Typescript, while providing a consistent developer experience, with tools like Volta, Husky, Lint-staged and ESLint. On the front-end, it uses Next.js 13 and Sass, and on the back-end, Sequelize.
 
 ### Features
 
 - Consistent code standards: on every commit Husky executes Lint-staged, running linters, formating with Prettier and type checking all staged files.
 - Linters: ESLint for .tsx and .ts files and Stylelint for .scss and .css files
+
 - Standardized commit messages with Commitlint and Angular Conventional Commits
+
 - Node version locking with Volta
-- Docker to easily run all services simultaneously with a single command
+
+- Docker: easily run all services simultaneously with a single command
 
 #### Front-end
 
@@ -18,33 +21,35 @@ A simple boilerplate designed to get fullstack projects with Typescript up and r
 
 - SVGR: use .svg images as React components
 
-- Next pages router
+- Next.js pages router
 
 #### Back-end
 
-- RESTful API with Node.js, Express and MySQL
+- RESTful API with Node.js, Express, MySQL and Sequelize
 
 ### Requirements
 
-- Node v16+
+- Node ^16
 
-- npm v8+
+- npm ^8
 
-- Volta for automatically managing Node and npm versions
+- Volta if you want to automatically manage Node and npm versions
 
 ### Getting started
+
+#### With Docker:
 
 To use this boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack project-name
-npm install
+npm run setup
 ```
 
 Or click the 'Use this template' button at the top of this repository and then clone the newly created repository. After cloning, run:
 
 ```shell
-npm install
+npm run setup
 ```
 
 If you want to use Volta:
@@ -53,17 +58,58 @@ If you want to use Volta:
 curl https://get.volta.sh | bash
 ```
 
-To run the project locally in development mode:
+To run the project in development mode, on the root of the project run:
+
+```shell
+docker compose up -d
+```
+
+#### Locally:
+
+To use this boilerplate:
+
+```shell
+git clone https://github.com/igordosreis/boilerplate-fullstack project-name
+npm run setup:local
+```
+
+Or click the 'Use this template' button at the top of this repository and then clone the newly created repository. After cloning, run on the root folder:
+
+```shell
+npm run setup:local
+```
+
+If you want to use Volta:
+
+```shell
+curl https://get.volta.sh | bash
+```
+
+To run the project locally in development mode, do the following steps:
+
+1. On the front-end folder of the project, open a new terminal window and run:
 
 ```shell
 npm run dev
 ```
 
+2. On the back-end folder of the project, open a new terminal window and run:
+
+```shell
+npm run dev
+```
+
+The server uses port `3071`. You can change this on the back-end/src/server.ts file or by using the provided .env file.
+
+3. Create a new MySQL 8 server.
+
+The database uses port `3306`, username as `root` and password as `123456`. You can change this on the back-end/src/database/config/database.ts file or by using the provided .env file.
+
 ---
 
 ###### Português
 
-# Boilerplate Fullstack para Next.js 13, Typescript e Sass
+# Boilerplate Fullstack para MERN com Typescript
 
 <!-- Um boilerplate simples concebido para rapidamente iniciar projetos usando Next.js, Typescript e Sass e também para prover uma experiência de desenvolvimento consistente, através de ferramentas como Volta, Husky, Lint-staged e ESLint.
 
