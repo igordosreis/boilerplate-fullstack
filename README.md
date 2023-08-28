@@ -97,7 +97,7 @@ npm run dev
 
 The server uses port `3071`. You can change this by using the provided .env file: remove the `.example` and change the value of the SERVER_PORT variable. Or change the port on the back-end/src/server.ts file.
 
-3. Create a new MySQL server.
+3. Create a new MySQL server
 
 The database uses port `3306`, username as `root` and password as `123456`.
 You can change this by using the provided .env file: remove the `.example` and change the value of the DB_PORT, DB_USER and DB_PASS variables, respectively. Or change these values on the back-end/src/database/config/database.ts file.
@@ -204,7 +204,7 @@ npm run dev
 
 O servidor usa a porta `3071`. Você pode mudar isso usando o arquivo .env fornecido: remova o `.example` e mude o valor da variável SERVER_PORT. Ou mude o valor da porta no arquivo back-end/src/server.ts.
 
-3. Crie um novo servidor de MySQL.
+3. Crie um novo servidor de MySQL
 
 O banco de dados usa a porta `3306`, o username como `root` e a senha como `123456`.
 Você pode mudar isso usando o arquivo .env fornecido: remova o `.example` e mude o valor das variáveis DB_PORT, DB_USER e DB_PASS, respectivamente. Ou mude o valor da porta no arquivo back-end/src/database/config/database.ts.
