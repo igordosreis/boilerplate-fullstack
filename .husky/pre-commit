@@ -4,8 +4,7 @@
 if git diff-index --cached --exit-code HEAD -- "front-end"; then
   echo "-------------\nNo changes in the front-end\n-------------"
 else
-  echo "
-           -------------
+  echo "   -------------
   Checking changes in the front-end
            -------------"
   (cd "front-end" && npx lint-staged --concurrent false)
