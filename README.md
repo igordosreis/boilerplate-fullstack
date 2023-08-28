@@ -13,7 +13,7 @@ A simple boilerplate designed to get fullstack projects up and running quickly u
 
 - Node version locking with Volta
 
-- Docker: easily run all services simultaneously with a single command
+- Docker: easily run the whole app with a single command
 
 #### Front-end
 
@@ -32,6 +32,8 @@ A simple boilerplate designed to get fullstack projects up and running quickly u
 - Node ^16
 
 - npm ^8
+
+- Docker if you want to use it to run the app
 
 - Volta if you want to automatically manage Node and npm versions
 
@@ -99,11 +101,12 @@ npm run dev
 npm run dev
 ```
 
-The server uses port `3071`. You can change this on the back-end/src/server.ts file or by using the provided .env file.
+The server uses port `3071`. You can change this by using the provided .env file: remove the `.example` and change the value of the SERVER_PORT variable. Or change the port on the back-end/src/server.ts file.
 
 3. Create a new MySQL 8 server.
 
-The database uses port `3306`, username as `root` and password as `123456`. You can change this on the back-end/src/database/config/database.ts file or by using the provided .env file.
+The database uses port `3306`, username as `root` and password as `123456`.
+You can change this by using the provided .env file: remove the `.example` and change the value of the DB_PORT, DB_USER, DB_PASS variables, respectively. Or change these values on the back-end/src/database/config/database.ts file.
 
 ---
 
