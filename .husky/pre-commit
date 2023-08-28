@@ -1,16 +1,16 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-if git diff-index --cached --exit-code HEAD -- "front-end"; then
-  echo "No changes in front-end"
+if git diff-index --cached HEAD -- "front-end"; then
+  echo "No changes in the front-end"
 else
-  echo "There are changes in front-end"
+  echo "There are changes in the front-end"
   (cd "front-end" && npx lint-staged)
 fi
 
-if git diff-index --cached --exit-code HEAD -- "back-end"; then
-  echo "No changes in back-end"
+if git diff-index --cached HEAD -- "back-end"; then
+  echo "No changes in the back-end"
 else
-  echo "There are changes in back-end"
+  echo "There are changes in the back-end"
   (cd "back-end" && npx lint-staged)
 fi
