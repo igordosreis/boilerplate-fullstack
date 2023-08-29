@@ -1,14 +1,14 @@
 version: '3.9'
 services:
   frontend:
-    container_name: app-front-end
-    build: ./front-end
+    container_name: app-frontend
+    build: ./frontend
     ports:
       - 3070:3000
     platform: linux/x86_64
-    working_dir: /app-front-end
+    working_dir: /app-frontend
     volumes:
-      - ./front-end:/app-front-end
+      - ./frontend:/app-frontend
     depends_on:
       backend:
         condition: service_healthy
@@ -17,14 +17,14 @@ services:
       timeout: 10s
       retries: 5
   backend:
-    container_name: app-back-end
-    build: ./back-end
+    container_name: app-backend
+    build: ./backend
     ports:
       - 3071:3071
     platform: linux/x86_64
-    working_dir: /app-back-end
+    working_dir: /app-backend
     volumes:
-      - ./back-end:/app-back-end
+      - ./backend:/app-backend
     depends_on:
       db:
         condition: service_healthy

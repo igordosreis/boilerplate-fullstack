@@ -2,7 +2,7 @@
 
 # Fullstack Boilerplate for MERN with Typescript
 
-A simple boilerplate designed to get fullstack projects up and running quickly using MERN (MySQL, Express, React and Node.js) with Typescript, while providing a consistent developer experience, with tools like Volta, Husky, Lint-staged and ESLint. On the front-end, it uses Next.js 13 and Sass, and on the back-end, Sequelize.
+A simple boilerplate designed to get fullstack projects up and running quickly using MERN (MySQL, Express, React and Node.js) with Typescript, while providing a consistent developer experience, with tools like Volta, Husky, Lint-staged and ESLint. On the frontend, it uses Next.js 13 and Sass, and on the backend, Sequelize.
 
 ### Features
 
@@ -15,7 +15,7 @@ A simple boilerplate designed to get fullstack projects up and running quickly u
 
 - Node version locking with Volta locally
 
-#### Front-end
+#### Frontend
 
 - Sass: Syntactically Awesome Style Sheets aka CSS with superpowers
 
@@ -23,7 +23,7 @@ A simple boilerplate designed to get fullstack projects up and running quickly u
 
 - Next.js pages router
 
-#### Back-end
+#### Backend
 
 - RESTful API with Node.js, Express, MySQL and Sequelize
 
@@ -83,24 +83,24 @@ curl https://get.volta.sh | bash
 
 To run the project locally in development mode, do the following steps:
 
-1. On the front-end folder, open a new terminal window and run:
+1. On the frontend folder, open a new terminal window and run:
 
 ```shell
 npm run dev
 ```
 
-2. On the back-end folder, open a new terminal window and run:
+2. On the backend folder, open a new terminal window and run:
 
 ```shell
 npm run dev
 ```
 
-The server uses port `3071`. You can change this by using the provided .env file: remove the `.example` and change the value of the SERVER_PORT variable. Or change the port on the back-end/src/server.ts file.
+The server uses port `3071`. You can change this by using the provided .env file: remove the `.example` and change the value of the SERVER_PORT variable. Or change the port on the backend/src/server.ts file.
 
 3. Create a new MySQL server
 
 The database uses port `3306`, username as `root` and password as `123456`.
-You can change this by using the provided .env file: remove the `.example` and change the value of the DB_PORT, DB_USER and DB_PASS variables, respectively. Or change these values on the back-end/src/database/config/database.ts file.
+You can change this by using the provided .env file: remove the `.example` and change the value of the DB_PORT, DB_USER and DB_PASS variables, respectively. Or change these values on the backend/src/database/config/database.ts file.
 
 ---
 
@@ -108,7 +108,7 @@ You can change this by using the provided .env file: remove the `.example` and c
 
 # Boilerplate Fullstack para MERN com Typescript
 
-Um boilerplate simples concebido para rapidamente iniciar projetos usando MERN (MySQL, Express, React e Node.js) com Typescript e também para prover uma experiência de desenvolvimento consistente, através de ferramentas como Volta, Husky, Lint-staged e ESLint. No front-end, é usado Next.js 13 e Sass, e no back-end, Sequelize.
+Um boilerplate simples concebido para rapidamente iniciar projetos usando MERN (MySQL, Express, React e Node.js) com Typescript e também para prover uma experiência de desenvolvimento consistente, através de ferramentas como Volta, Husky, Lint-staged e ESLint. No frontend, é usado Next.js 13 e Sass, e no backend, Sequelize.
 
 ### Funcionalidades
 
@@ -122,7 +122,7 @@ Um boilerplate simples concebido para rapidamente iniciar projetos usando MERN (
 
 - Versão do Node fixa com o Volta localmente
 
-#### Front-end
+#### Frontend
 
 - Sass: Syntactically Awesome Style Sheets também conhecido como CSS com super poderes
 
@@ -130,7 +130,7 @@ Um boilerplate simples concebido para rapidamente iniciar projetos usando MERN (
 
 - Pages router do Next.js
 
-#### Back-end
+#### Backend
 
 - API RESTful com Node.js, Express, MySQL e Sequelize
 
@@ -190,21 +190,21 @@ curl https://get.volta.sh | bash
 
 Para rodar o projeto localmente em modo de desenvolvimento, faça os seguintes passos:
 
-1. Na pasta front-end, abra uma nova janela do terminal e rode:
+1. Na pasta frontend, abra uma nova janela do terminal e rode:
 
 ```shell
 npm run dev
 ```
 
-2. Na pasta back-end, abra uma nova janela do terminal e rode:
+2. Na pasta backend, abra uma nova janela do terminal e rode:
 
 ```shell
 npm run dev
 ```
 
-O servidor usa a porta `3071`. Você pode mudar isso usando o arquivo .env fornecido: remova o `.example` e mude o valor da variável SERVER_PORT. Ou mude o valor da porta no arquivo back-end/src/server.ts.
+O servidor usa a porta `3071`. Você pode mudar isso usando o arquivo .env fornecido: remova o `.example` e mude o valor da variável SERVER_PORT. Ou mude o valor da porta no arquivo backend/src/server.ts.
 
 3. Crie um novo servidor de MySQL
 
 O banco de dados usa a porta `3306`, o username como `root` e a senha como `123456`.
-Você pode mudar isso usando o arquivo .env fornecido: remova o `.example` e mude o valor das variáveis DB_PORT, DB_USER e DB_PASS, respectivamente. Ou mude o valor da porta no arquivo back-end/src/database/config/database.ts.
+Você pode mudar isso usando o arquivo .env fornecido: remova o `.example` e mude o valor das variáveis DB_PORT, DB_USER e DB_PASS, respectivamente. Ou mude o valor da porta no arquivo backend/src/database/config/database.ts.
