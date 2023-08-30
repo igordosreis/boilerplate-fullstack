@@ -45,6 +45,7 @@ To use this boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack project-name
+cd project-name
 npm run setup
 ```
 
@@ -175,6 +176,7 @@ Para usar esse boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack project-name
+cd nome-do-projeto
 npm run setup:local
 ```
 
