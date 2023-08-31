@@ -45,16 +45,17 @@ To use this boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack project-name
+cd project-name
 npm run setup
 ```
 
-Or click the 'Use this template' button at the top of this repository and then clone the newly created repository. After cloning, run in the root folder:
+Or click the 'Use this template' button at the top of this repository and then clone the newly created repository. After cloning, run in the root folder of the project:
 
 ```shell
 npm run setup
 ```
 
-To run the project in development mode, on the root of the project run:
+To run the project in development mode, run in the root folder of the project:
 
 ```shell
 docker compose up -d
@@ -66,10 +67,11 @@ To use this boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack project-name
+cd project-name
 npm run setup:local
 ```
 
-Or click the 'Use this template' button at the top of this repository and then clone the newly created repository. After cloning, run on the root folder:
+Or click the 'Use this template' button at the top of this repository and then clone the newly created repository. After cloning, run on the root folder of the project:
 
 ```shell
 npm run setup:local
@@ -152,6 +154,7 @@ Para usar esse boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack nome-do-projeto
+cd nome-do-projeto
 npm run setup
 ```
 
@@ -161,7 +164,7 @@ Ou clique no botão 'Use this template' no topo desse repositório e então clon
 npm run setup
 ```
 
-Para rodar o projeto localmente em modo de desenvolvimento:
+Para rodar o projeto localmente em modo de desenvolvimento, rode na pasta raiz do projeto:
 
 ```shell
 docker compose up -d
@@ -173,6 +176,7 @@ Para usar esse boilerplate:
 
 ```shell
 git clone https://github.com/igordosreis/boilerplate-fullstack project-name
+cd nome-do-projeto
 npm run setup:local
 ```
 
